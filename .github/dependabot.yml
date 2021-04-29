@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: html-proofer
+    versions:
+    - 3.18.5
+    - 3.18.6
+    - 3.18.8
+    - 3.19.0
+  - dependency-name: github-pages
+    versions:
+    - "212"
+    - "213"
+  - dependency-name: nokogiri
+    versions:
+    - 1.11.2
